@@ -56,11 +56,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const play_place = document.querySelector('.play_place');
     const resultDisplay = document.querySelector('#result_place');
     const textInfo = document.querySelector('.textInfo');
+    const nextLevel = document.querySelector('.nextLevel button');
     //zmienne do porównywania itp.
     var selected_cards = [];
     var selected_cards_id = [];
     var founded_cards = [];
     var trials = 1;
+    var level = 1;
   
     //funkcja do wygenerowania gry
     function create_play_board(){
@@ -100,12 +102,13 @@ document.addEventListener('DOMContentLoaded', ()=> {
       selected_cards_id = [];
       resultDisplay.textContent = trials;
       trials++;
-      
+
       //sprawdzenie czy znaleźliśmy wszystkie pary
       if (founded_cards.length === cardsList.length/2) {
         textInfo.textContent = 'Brawo! Znalazłeś wszystkie pary!';
-        textInfo.setAttribute('class', 'textInfo correct')
-      }
+        textInfo.setAttribute('class', 'textInfo correct');
+        nextLevel.style.visibility="visible";
+          }
     }
   
     //odwracanie kart 
