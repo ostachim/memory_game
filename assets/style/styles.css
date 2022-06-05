@@ -43,10 +43,34 @@ h3 {
     margin: 0 15px 15px 0;
     width:150px;
     height:150px;
+    cursor:pointer;
 }
 
 .play_place .card.found {
     background-color:transparent;
     box-shadow: none;
     pointer-events: none;
+}
+
+.nextLevel button{
+    background-color:#E0CBA8;
+    border:0 solid black;
+    border-radius:5px;
+    margin-top:0;
+    margin-bottom:10px;
+    cursor:pointer;
+    color:black;
+    padding:10px;
+    position: absolute;
+    top:100px;
+    left:50vw;
+    transform:translateX(-75%);
+    visibility:hidden;
+
+
+}
+.nextLevel button:hover{
+    background-color:#bead8f;
+    transition:1s;
+
 }
