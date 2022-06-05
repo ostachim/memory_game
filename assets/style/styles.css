@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial ', sans-serif;
+    background-color:#FAD4C0;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size:40px;
+    margin:0 0;
+}
+
+h3 {
+}
+
+.textInfo {
+}
+
+.textInfo.correct {
+    color: #7faf51;
+    font-weight: bold;
+}
+
+.textInfo.wrong {
+    color: #fa3535;
+    font-weight: bold;
+}
+
+.play_place {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.play_place .card {
+    background-color:#FEE9E1;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    margin: 0 15px 15px 0;
+    width:150px;
+    height:150px;
+}
+
+.play_place .card.found {
+    background-color:transparent;
+    box-shadow: none;
+    pointer-events: none;
+}
