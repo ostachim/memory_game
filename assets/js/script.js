@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
       var play_place = document.createElement('div');
       play_place.setAttribute('class', 'play_place');
       container.appendChild(play_place);
-      play_place.style.maxWidth= '1000px';
+      play_place.style.maxWidth= '870px';
 
 
       for(let i = 0; i < cardsList_level_2.length; i++) {
@@ -402,7 +402,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
       var play_place = document.createElement('div');
       play_place.setAttribute('class', 'play_place');
       container.appendChild(play_place);
-      play_place.style.maxWidth= '1200px';
+      play_place.style.maxWidth= '1160px';
 
 
 
@@ -449,10 +449,9 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
       //sprawdzenie czy znaleźliśmy wszystkie pary
       if (founded_cards.length === cardsList_level_3.length/2) {
-        textInfo.textContent = 'Brawo! Znalazłeś wszystkie pary!';
+        textInfo.textContent = 'Gratulację! Wszystkie poziomy trudności są za Tobą!';
         textInfo.setAttribute('class', 'textInfo correct');
-        nextLevel.style.visibility="visible";
-          }
+      }
     }
   
     //odwracanie kart 
@@ -480,6 +479,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
       founded_cards=[];
       play_place.remove();
       level++;
+      nextLevel.style.visibility="hidden";
       
 
       if(level==2){
