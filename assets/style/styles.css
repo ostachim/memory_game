@@ -1,11 +1,13 @@
 body {
     font-family: 'Arial ', sans-serif;
     background-color:#FAD4C0;
+    margin:0 0;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
+    text-align:center;
 }
 
 h1 {
@@ -34,6 +36,8 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     max-width: 580px;
+    margin: 0 auto;
+
 
 }
 
@@ -46,6 +50,7 @@ h3 {
     height:130px;
     cursor:pointer;
 }
+
 
 .play_place .card.found {
     background-color:transparent;
@@ -62,11 +67,9 @@ h3 {
     cursor:pointer;
     color:black;
     padding:10px;
-    position: absolute;
     top:80px;
     left:50vw;
-    transform:translateX(-50%);
-    
+    visibility:hidden;
 
 
 }
